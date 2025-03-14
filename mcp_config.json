@@ -1,0 +1,13 @@
+{
+    "websearch": {
+      "script": "web_search.py",
+      "encoding_error_handler": "ignore",
+      "description": "Web search capability using Exa API that provides real-time internet search results. Supports both basic and advanced search with filtering options including domain restrictions, text inclusion requirements, and date filtering. Returns formatted results with titles, URLs, publication dates, and content summaries.",
+      "required_env_vars": ["EXA_API_KEY"],
+      "active": true
+    },
+    "settings": {
+      "model": "gpt-4o",
+      "system_prompt_path": "system_prompt.txt"
+    }
+  }

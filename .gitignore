@@ -1,0 +1,38 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+*.so
+*.egg
+*.egg-info/
+develop-eggs/
+.eggs/
+
+# Virtual environments
+.venv/
+.env
+venv/
+ENV/
+env/
+
+# Testing and coverage
+.coverage
+.tox/
+.pytest_cache/
+htmlcov/
+.coverage.*
+coverage.xml
+*.cover
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Documentation
+docs/_build/
