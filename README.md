@@ -48,7 +48,7 @@ This repository is part of the broader ReActMCP project that connects various MC
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/ReActMCP.git
+   git clone https://github.com/mshojaei77/ReActMCP.git
    cd ReActMCP
    ```
 
@@ -75,6 +75,7 @@ Create a `.env` file in the project root directory with at least the following v
 
 ```env
 EXA_API_KEY=your_exa_api_key_here
+OPENAI_API_KEY=...
 ```
 
 This key is required by the Exa API for performing web searches.
