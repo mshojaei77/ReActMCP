@@ -212,6 +212,12 @@ Contributions are welcome! If you have suggestions, bug fixes, or improvements, 
 
 Happy coding and enjoy building your personalized, multi-tool AI assistant with ReActMCP Web Search! 🚀😊
 
+## Star History
 
-
-[![Star History Chart](https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Timeline)](https://www.star-history.com/#mshojaei77/ReActMCP&Timeline)
+<a href="https://www.star-history.com/#mshojaei77/ReActMCP&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date" />
+ </picture>
+</a>
