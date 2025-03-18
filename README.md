@@ -33,7 +33,9 @@ This repository is part of the broader ReActMCP project that connects various MC
 - **MCP Integration**: Easily add this tool into your MCP server ecosystem for multi-tool AI assistance.
 
 ---
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date)](https://www.star-history.com/#mshojaei77/ReActMCP&Date)
 ## Requirements
 
 - **Python 3.8+**
@@ -211,7 +213,5 @@ Contributions are welcome! If you have suggestions, bug fixes, or improvements, 
 Happy coding and enjoy building your personalized, multi-tool AI assistant with ReActMCP Web Search! 🚀😊
 
 
-## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date)](https://www.star-history.com/#mshojaei77/ReActMCP&Date)
-
+[![Star History Chart](https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Timeline)](https://www.star-history.com/#mshojaei77/ReActMCP&Timeline)
