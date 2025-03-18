@@ -209,3 +209,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Contributions are welcome! If you have suggestions, bug fixes, or improvements, please open an issue or submit a pull request.
 
 Happy coding and enjoy building your personalized, multi-tool AI assistant with ReActMCP Web Search! 🚀😊
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date)](https://www.star-history.com/#mshojaei77/ReActMCP&Date)
+
