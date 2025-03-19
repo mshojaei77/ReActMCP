@@ -33,7 +33,9 @@ This repository is part of the broader ReActMCP project that connects various MC
 - **MCP Integration**: Easily add this tool into your MCP server ecosystem for multi-tool AI assistance.
 
 ---
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date)](https://www.star-history.com/#mshojaei77/ReActMCP&Date)
 ## Requirements
 
 - **Python 3.8+**
@@ -48,7 +50,7 @@ This repository is part of the broader ReActMCP project that connects various MC
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/ReActMCP.git
+   git clone https://github.com/mshojaei77/ReActMCP.git
    cd ReActMCP
    ```
 
@@ -75,6 +77,7 @@ Create a `.env` file in the project root directory with at least the following v
 
 ```env
 EXA_API_KEY=your_exa_api_key_here
+OPENAI_API_KEY=...
 ```
 
 This key is required by the Exa API for performing web searches.
@@ -222,3 +225,13 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Contributions are welcome! If you have suggestions, bug fixes, or improvements, please open an issue or submit a pull request.
 
 Happy coding and enjoy building your personalized, multi-tool AI assistant with ReActMCP Web Search! 🚀😊
+
+## Star History
+
+<a href="https://www.star-history.com/#mshojaei77/ReActMCP&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date" />
+ </picture>
+</a>
