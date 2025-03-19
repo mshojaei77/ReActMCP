@@ -158,4 +158,5 @@ if __name__ == "__main__":
     #asyncio.run(test_search())
     
     # Comment out the line below when testing directly
+    print("Running Exa Web Search MCP server...")
     mcp.run()

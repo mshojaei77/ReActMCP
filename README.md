@@ -189,6 +189,20 @@ ReActMCP Web Search is designed to be extended and personalized:
 
 ---
 
+## Claude Desktop Configuration:
+Configure Claude Desktop to use this server by adding the following to your configuration:
+
+```json
+{
+  "mcpServers": {
+    "websearch": {
+         "command": "python",
+         "args": ["path/to/servers/exa_web_search.py"]
+       }
+  }
+}
+```
+
 ## Troubleshooting
 
 - **Missing EXA_API_KEY:** Ensure that the `.env` file is properly set up with your valid Exa API key.

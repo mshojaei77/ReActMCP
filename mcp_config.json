@@ -1,13 +1,20 @@
 {
     "websearch": {
-      "script": "web_search.py",
+      "script": "servers/exa_web_search.py",
       "encoding_error_handler": "ignore",
       "description": "Web search capability using Exa API that provides real-time internet search results. Supports both basic and advanced search with filtering options including domain restrictions, text inclusion requirements, and date filtering. Returns formatted results with titles, URLs, publication dates, and content summaries.",
       "required_env_vars": ["EXA_API_KEY"],
       "active": true
     },
+    "firecrawl": {
+      "script": "servers/fire_crawl.py",
+      "encoding_error_handler": "ignore",
+      "description": "Advanced web scraping with JavaScript rendering, PDF support, and smart rate limiting. Supports both basic and advanced scraping with customizable options including JavaScript rendering, CSS selector filtering, and rate-limiting controls.",
+      "required_env_vars": ["FIRECRAWL_API_KEY"],
+      "active": true
+    },
     "settings": {
       "model": "gpt-4o",
-      "system_prompt_path": "system_prompt.txt"
+      "system_prompt_path": "prompts/system_prompt.txt"
     }
   }
