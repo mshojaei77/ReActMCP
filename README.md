@@ -18,7 +18,6 @@ This repository is part of the broader ReActMCP project that connects various MC
 - [Usage](#usage)
   - [Running the Web Search Server](#running-the-web-search-server)
   - [Testing the Tools](#testing-the-tools)
-- [Personalization and Customization](#personalization-and-customization)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
 - [Contributing](#contributing)
@@ -154,7 +153,7 @@ Feel free to adjust the system prompt to align with your desired assistant behav
 The MCP servers is implemented in `servers` directory. To run a server, simply execute it :
 
 ```bash
-python web_search.py
+python servers/web_search.py
 ```
 
 This command will start the MCP server which listens for requests and exposes the following tools:
