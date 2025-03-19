@@ -33,9 +33,6 @@ This repository is part of the broader ReActMCP project that connects various MC
 - **MCP Integration**: Easily add this tool into your MCP server ecosystem for multi-tool AI assistance.
 
 ---
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=mshojaei77/ReActMCP&type=Date)](https://www.star-history.com/#mshojaei77/ReActMCP&Date)
 ## Requirements
 
 - **Python 3.8+**
@@ -154,7 +151,7 @@ Feel free to adjust the system prompt to align with your desired assistant behav
 
 ### Running the Web Search Server
 
-The MCP server is implemented in `web_search.py` and utilizes the FastMCP framework. To run the server, simply execute:
+The MCP servers is implemented in `servers` directory. To run a server, simply execute it :
 
 ```bash
 python web_search.py
@@ -180,18 +177,6 @@ if __name__ == "__main__":
 This will print search results for sample queries and help you verify that the tool is functioning as expected.
 
 ---
-
-## Personalization and Customization
-
-ReActMCP Web Search is designed to be extended and personalized:
-
-- **Adding New Tools:** You can create additional MCP tools by following the structure shown in `web_search.py`. Decorate your asynchronous functions with `@mcp.tool()` and add them to your MCP server.
-- **Modifying Configurations:** Update `mcp_config.json` to activate/deactivate tools, change default parameters, or add new environment variable requirements.
-- **Customizing the Assistant's Behavior:** Edit `system_prompt.txt` to change the tone, style, or instructions provided to the AI assistant.
-- **Styling Output:** The formatted markdown results in `format_search_results()` can be customized to display additional information, change styling, or include further details.
-
----
-
 ## Claude Desktop Configuration:
 Configure Claude Desktop to use this server by adding the following to your configuration:
 
