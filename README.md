@@ -1,5 +1,7 @@
 # ReActMCP Web Search
 
+[![smithery badge](https://smithery.ai/badge/@mshojaei77/ReActMCP)](https://smithery.ai/client/@mshojaei77/ReActMCP)
+
 ReActMCP Web Search is an MCP (Model Context Protocol) server that integrates web search capabilities into your AI assistant framework. It leverages the Exa API to perform both basic and advanced web searches, returning real-time, markdown-formatted results including titles, URLs, publication dates, and content summaries.
 
 This repository is part of the broader ReActMCP project that connects various MCP tools and servers to empower your AI assistant with a wide range of capabilities.
@@ -42,6 +44,16 @@ This repository is part of the broader ReActMCP project that connects various MC
 ---
 
 ## Installation
+
+### Installing via Smithery
+
+To install Web Search for Claude Desktop automatically via [Smithery](https://smithery.ai/client/@mshojaei77/ReActMCP):
+
+```bash
+npx -y @smithery/cli install @mshojaei77/ReActMCP --client claude
+```
+
+### Manual Installation
 
 1. **Clone the Repository**
 

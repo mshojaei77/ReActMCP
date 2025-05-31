@@ -1,0 +1,25 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'python',
+      args: ['servers/exa_web_search.py'],
+      env: {
+        EXA_API_KEY: config.exaApiKey
+      }
+    })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - exaApiKey
+    properties:
+      exaApiKey:
+        type: string
+        description: Exa API key for performing web searches
+  exampleConfig:
+    exaApiKey: your_exa_api_key_here
