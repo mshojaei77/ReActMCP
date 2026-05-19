@@ -13,6 +13,13 @@
       "required_env_vars": ["FIRECRAWL_API_KEY"],
       "active": true
     },
+    "tavily_extract": {
+      "script": "servers/tavily_extract.py",
+      "encoding_error_handler": "ignore",
+      "description": "URL content extraction using Tavily Extract API. Extracts raw and markdown content from one or more URLs as a parallel option to Firecrawl scrape_url.",
+      "required_env_vars": ["TAVILY_API_KEY"],
+      "active": false
+    },
     "settings": {
       "model": "gpt-4o",
       "system_prompt_path": "prompts/system_prompt.txt"
