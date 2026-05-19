@@ -6,6 +6,13 @@
       "required_env_vars": ["EXA_API_KEY"],
       "active": true
     },
+    "tavily_websearch": {
+      "script": "servers/tavily_web_search.py",
+      "encoding_error_handler": "ignore",
+      "description": "Web search capability using Tavily API that provides real-time internet search results. Supports both basic and advanced search with filtering options including domain restrictions and date filtering. Returns formatted results with titles, URLs, and content summaries.",
+      "required_env_vars": ["TAVILY_API_KEY"],
+      "active": false
+    },
     "firecrawl": {
       "script": "servers/fire_crawl.py",
       "encoding_error_handler": "ignore",
