@@ -36,7 +36,8 @@ This repository is part of the broader ReActMCP project that connects various MC
 
 - **Python 3.8+**
 - [python-dotenv](https://pypi.org/project/python-dotenv/)
-- [exa_py](https://github.com/your-org/exa_py) (Exa API client)
+- [exa-py](https://pypi.org/project/exa-py/) (Exa API client)
+- [firecrawl-py](https://pypi.org/project/firecrawl-py/) (Firecrawl API client)
 - Other dependencies that may be required by your MCP framework
 
 ---
@@ -60,7 +61,7 @@ This repository is part of the broader ReActMCP project that connects various MC
 3. **Install Dependencies**
 
    ```bash
-   pip install -r requirements.txt
+   uv pip install -r requirements.txt
    ```
 
 ---
@@ -144,6 +145,37 @@ Your responses should be well-structured, factually accurate, and tailored to th
 
 Feel free to adjust the system prompt to align with your desired assistant behavior.
 
+### Docker and Glama
+
+The published container runs the Exa MCP server over stdio. Build and run it
+with the API key supplied at runtime:
+
+```bash
+docker build -t reactmcp-exa:local .
+docker run --rm -i -e EXA_API_KEY=your_exa_api_key_here reactmcp-exa:local
+```
+
+The exact container command for MCP hosts is:
+
+```text
+docker run --rm -i -e EXA_API_KEY=your_exa_api_key_here reactmcp-exa:local
+```
+
+The Docker image entry point is `servers/exa_web_search.py`. `main.py` is the
+optional OpenAI/LangGraph host and is not the container MCP entry point.
+
+The repository includes `glama.json` with the maintainer identity used by
+Glama's claim flow. After merging it, repeat the Glama claim flow so Glama
+syncs the metadata and Dockerfile.
+
+To validate the image with MCP Inspector:
+
+```bash
+npx @modelcontextprotocol/inspector docker run --rm -i -e EXA_API_KEY=your_exa_api_key_here reactmcp-exa:local
+```
+
+Run the Inspector command from a terminal with Docker and Node.js installed.
+
 ---
 
 ## Usage
@@ -153,7 +185,7 @@ Feel free to adjust the system prompt to align with your desired assistant behav
 The MCP servers is implemented in `servers` directory. To run a server, simply execute it :
 
 ```bash
-python servers/web_search.py
+python servers/exa_web_search.py
 ```
 
 This command will start the MCP server which listens for requests and exposes the following tools:
@@ -163,7 +195,7 @@ This command will start the MCP server which listens for requests and exposes th
 
 ### Testing the Tools
 
-Within `web_search.py`, a test function `test_search()` is provided (currently commented out) to demonstrate basic usage of the search capabilities. You can run this test by uncommenting the test execution block and using Python's asyncio runner:
+Within `servers/exa_web_search.py`, a test function `test_search()` is provided (currently commented out) to demonstrate basic usage of the search capabilities. You can run this test by uncommenting the test execution block and using Python's asyncio runner:
 
 ```python
 if __name__ == "__main__":

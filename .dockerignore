@@ -1,0 +1,13 @@
+.git
+.github
+.venv
+venv
+env
+__pycache__
+*.py[cod]
+.env
+*.log
+docs
+prompts
+README.md
+uv.lock
