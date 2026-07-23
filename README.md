@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/mshojaei77-reactmcp-badge.png)](https://mseep.ai/app/mshojaei77-reactmcp)
+
 # ReActMCP Web Search
 
 ReActMCP Web Search is an MCP (Model Context Protocol) server that integrates web search capabilities into your AI assistant framework. It leverages the Exa API to perform both basic and advanced web searches, returning real-time, markdown-formatted results including titles, URLs, publication dates, and content summaries.
